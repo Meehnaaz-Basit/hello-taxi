@@ -1,0 +1,138 @@
+mapping : 
+
+{1600 - 1800 - 2100}
+
+xxl 1440 
+xl  1200
+lg  1024
+
+md   768
+
+sm   576
+col  320
+
+screen sizes:    |    xxl/xl/lg     |   md    |    sm/col
+
+<i class="fa-solid fa-truck-plane"></i>
+
+<i class="fa-solid fa-people-arrows"></i>
+
+<i class="fa-solid fa-door-open"></i>
+
+<i class="fa-solid fa-hotel"></i>
+
+.review-section {
+  width: 100%;
+  min-height: 80vh;
+  background-image: url(../images/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.review-section::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1e1014d4;
+  z-index: -1;
+}
+//////
+
+.background-part {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/yellow-sky-3.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.road {
+  height: 250px;
+  width: 700%;
+  display: block;
+  background-image: url(../images/road.jpg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-repeat: repeat-x;
+  animation: road 8s linear infinite;
+}
+@keyframes road {
+  100% {
+    transform: translateX(-1000px);
+  }
+}
+
+//// text border
+
+ -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+
+
+///
+<section class="lost-section">
+  <div class="container">
+       <!--  -->
+  <div class="row justify-content-center">
+  <div class="col-lg-7">
+    <div class="common-heading-start text-center">
+      <h2 class="common-head">Lost Assets ?</h2>
+      <p class="common-pera">Have you lost something in our taxis? <br>Then you need not to worry as we are handling all the lost items in our storage. <br> You just need to follow '3'
+         steps. </p>
+    </div>
+  </div>
+</div>
+  <!--  -->
+  <div class="row justify-content-center lost-box">
+    <!-- item 1 -->
+    <div class="col-lg-4">
+      <div class="lost-items ">
+        <h2>step 1</h2>
+         <div class="lost-overlay">
+          <small class="hover-lost-text">Note where and when you have lost it</small>
+         </div>
+      </div>
+    </div>
+    <!-- item 1 end -->
+        <!-- item 2 -->
+    <div class="col-lg-4">
+      <div class="lost-items ">
+        <h2>step 2</h2>
+         <div class="lost-overlay">
+          <small class="hover-lost-text">Lorem ipsum dolor sit amet consectetur.
+
+          </small>
+         </div>
+      </div>
+    </div>
+    <!-- item 2 end -->
+        <!-- item 3 -->
+    <div class="col-lg-4">
+      <div class="lost-items ">
+        <h2>step 3</h2>
+         <div class="lost-overlay">
+          <small class="hover-lost-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</small>
+         </div>
+      </div>
+    </div>
+    <!-- item 3 end -->
+  </div>
+  </div>
+</section>
+
+
